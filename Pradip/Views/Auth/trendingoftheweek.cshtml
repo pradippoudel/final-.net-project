@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Trendingoftheweek";
+}
+<div>
+    <a class="btn btn-success" asp-action="MobilesDetails" asp-controller="BookNow" type="submit">Show Records</a>
+
+</div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 38rem;">
+  <img class="card-img-top" src="~/img/Infinix Hot 10 Play.png" style="height:10vh width:10vw" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Infinix Hot 10 Play (4GB/64GB)  </h5>
+     <p class="card-text"><h6> Battery 6000mAh II MediaTek Helio G25 (12 nm) Chipset</h6></p>
+     <p style="color:red"> Rs. 17,140</p>
+   <a href="#" class="btn btn-primary" onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 38rem;">
+  <img class="card-img-top" src="~/img/Apple iPhone 11 (64GB).jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Apple iPhone 11 (64GB) - Black</h5>
+    <p class="card-text"><h6>6.1-inch Liquid Retina HD LCD display|| Water and dust resistant|| 4K video</h6></p>
+     <p style="color:red"> Rs. 1,04,857 </p>
+    <a href="#" class="btn btn-primary" onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+    < <div class="col">
+      <div class="card" style="width: 18rem; height: 35rem;">
+  <img class="card-img-top" src="~/img/Apple iPhone 11 Pro (64GB).jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Apple iPhone 11 Pro (64GB) - Space Grey  </h5>
+     <p class="card-text"><h6> 5.8-inch Super Retina XDR OLED display || Wireless charging|| Fast charge with 18W adapter </h6></p>
+     <p style="color:red"> Rs.1,49,240 </p>
+   <a href="#" class="btn btn-primary" onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row">
+     <div class="col">
+      <div class="card" style="width: 18rem;height: 35rem;">
+  <img class="card-img-top" src="~/img/Oneplus 10 Pro 5G.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Oneplus 10 Pro 5G Ram: 12Gb Storage: 256Gb </h5>
+    <p class="card-text"><h6>"6.7" Ltpo2 Amoled 120Hz Display 80W Supervooc Wired Fast Charging]</h6></p>
+     <p style="color:red">Rs. 134,999</p>
+    <a href="#" class="btn btn-primary" onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 38rem;">
+  <img class="card-img-top" src="~/img/Apple iPhone 11 (64GB).jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Apple iPhone 11 (64GB) - Black</h5>
+    <p class="card-text"><h6>6.1-inch Liquid Retina HD LCD display|| Water and dust resistant|| 4K video</h6></p>
+     <p style="color:red"> Rs. 1,04,857 </p>
+    <a href="#" class="btn btn-primary" onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;height: 35rem;">
+  <img class="card-img-top" src="~/img/OnePlus 9 5G (LE2113).jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">OnePlus 9 5G (LE2113) II Ram 12GB& Storage 128GB   </h5>
+    <p class="card-text"><h6>Video 8K@30fps With Oneplus Band ||  Fast wireless charging 15W ||Battery: Li-Po 4500 mAh </h6></p>
+     <p style="color:red">Rs. 104,999 </p>
+    <a href="#" class="btn btn-primary" onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    function Booknow()
+    {
+        location.href = '@Url.Action("BookNow","BookNow")';
+    }
+</script>

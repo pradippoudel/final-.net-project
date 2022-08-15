@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Infinix";
+}
+<div>
+    <a class="btn btn-success" asp-action="MobilesDetails" asp-controller="BookNow" type="submit">Show Records</a>
+
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 38rem;">
+  <img class="card-img-top" src="~/img/Infinix Hot 10 Play.png" style="height:10vh width:10vw" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Infinix Hot 10 Play (4GB/64GB)  </h5>
+     <p class="card-text"><h6> Battery 6000mAh II MediaTek Helio G25 (12 nm) Chipset</h6></p>
+     <p style="color:red"> Rs. 17,140</p>
+   <a href="#" class="btn btn-primary"  onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 38rem;">
+  <img class="card-img-top" src="~/img/Infinix Smart 5.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Infinix Smart 5 ( 3GB/64GB)</h5>
+    <p class="card-text"><h6>Fingerprint Sensor || "6.6" Display|| Battery: Li-Po 5000 mAh</h6></p>
+     <p style="color:red"> Rs. 14,490 </p>
+    <a href="#" class="btn btn-primary"  onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;height: 38rem;">
+  <img class="card-img-top" src="~/img/Infinix Smart 6 HD.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Infinix Smart 6 HD [ 2GB RAM, 32GB ROM] </h5>
+    <p class="card-text"><h6>"6.6" HD DISPLAY, 5000mAh Battery, Android 11| Battery : Li-Po 5000 mAh </h6></p>
+     <p style="color:red">Rs. 11,999</p>
+    <a href="#" class="btn btn-primary"  onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 35rem;">
+  <img class="card-img-top" src="~/img/Infinix Hot 12i.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Infinix Hot 12i (4GB+12GB)  </h5>
+     <p class="card-text"><h6>  6.6" IPS LCD II Fingerprint II Li-Ion 5000 mAh Battery </h6></p>
+     <p style="color:red"> Rs. 15,599 </p>
+   < <a href="#" class="btn btn-primary" onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 35rem;">
+ <img class="card-img-top" src="~/img/Infinix HOT 12 PLAY.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Infinix HOT 12 PLAY [ 4GB RAM, 64/128GB Storage</h5>
+    <p class="card-text"><h6>6.82" DISPLAY, 6000mAh Battery, 90Hz Refresh Rate </h6></p>
+     <p style="color:red"> Rs. 16,699 </p>
+     <a href="#" class="btn btn-primary" onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;height: 35rem;">
+  <img class="card-img-top" src="~/img/Infinix Hot 10s.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Infinix Hot 10s (4GB/128GB)  </h5>
+    <p class="card-text"><h6>Display Size 6.82" II Battery 6000mAh II 64MP Camera</h6></p>
+     <p style="color:red">Rs. 19,500 </p>
+    <a href="#" class="btn btn-primary" onclick="Booknow()">Buy Now</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    function Booknow()
+    {
+        location.href = '@Url.Action("BookNow","BookNow")';
+    }
+</script>
+

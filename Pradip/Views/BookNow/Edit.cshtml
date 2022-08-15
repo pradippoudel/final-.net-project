@@ -1,0 +1,49 @@
+﻿
+@{
+	ViewData["Title"]="Edit Records";
+}
+@model Pradip.Models.clientRecord;
+<div class="row justify-content-md-center">
+	<div class="row col-8">
+		<h4 class="text-danger text-center">Edit Personal Information</h4>
+		<hr/>
+
+		@if(TempData["error"]is not null)
+		{
+			<div class="alert alert-danger">@TempData["error"]</div>
+		}
+
+
+		@if(TempData["msg"]is not null)
+		{
+			<div class="alert alert-success">@TempData["msg"]</div>
+		}
+		<form method="post" asp-controller="BookNow" asp-action="Edit">
+			    <input type="hidden" asp-for="Id" />
+			<div class="mb-3">
+				<label class="form-label" asp-for="productName"></label>
+				<input asp-for="productName" class="form-control" />
+				<span class="text-danger" asp-validation-for="productName"></span>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" asp-for="BuyerName"></label>
+				<input asp-for="BuyerName" class="form-control" />
+				<span class="text-danger" asp-validation-for="Address"></span>
+			</div>
+
+				<div class="mb-3">
+				<label class="form-label" asp-for="Contact"></label>
+				<input asp-for="Contact" class="form-control" />
+				<span class="text-danger" asp-validation-for="Contact"></span>
+			</div>
+
+				<div class="mb-3">
+				<label class="form-label" asp-for="Address"></label>
+				<input asp-for="Address" class="form-control" />
+				<span class="text-danger" asp-validation-for="Address"></span>
+			</div>
+			<hr/>
+			<button type="submit" class="btn btn-success">submit</button>
+		</form>
+	</div>
+</div>

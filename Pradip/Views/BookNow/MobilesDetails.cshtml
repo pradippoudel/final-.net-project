@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] ="Mobiles Records";
+}
+@model IEnumerable<Pradip.Models.clientRecord>
+<div class="row justify-content-md-start">
+    <div class="col-sm-12">
+        <h3 class="text-center text-primary">Mobiles Details</h3>
+        <a class="btn btn-success" asp-action="BookNow" asp-controller="BookNow">Buy Phone</a>
+        @if(TempData["error"]is not null)
+		{
+			<div class="alert alert-danger">@TempData["error"]</div>
+		}
+
+
+		@if(TempData["msg"]is not null)
+		{
+			<div class="alert alert-success">@TempData["msg"]</div>
+		}
+        <table class="table table-border" >
+            <thead>
+                <th>Product</th>
+                <th>Buyer Name</th>
+                <th>Contact</th>
+                <th>Address</th>  
+            </thead>
+            <tbody>
+                @foreach(var p in Model)
+                {
+                    <tr class="text-center">
+                        <td>@p.productName</td>
+                        <td>@p.BuyerName</td>
+                        <td>@p.Contact</td>
+                        <td>@p.Address</td>
+                        <td>
+                            <a class="btn btn-primary" asp-controller="BookNow" asp-action="Edit" asp-route-id="@p.Id">Edit</a>
+                            <a class="btn btn-danger"  asp-controller="BookNow" asp-action="Remove" asp-route-id="@p.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+        	
